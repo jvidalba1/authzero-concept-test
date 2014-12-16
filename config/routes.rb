@@ -1,11 +1,11 @@
 AuthzeroConceptTest::Application.routes.draw do
-  get "auth0/callback"
-  get "auth0/failure"
+  get '/auth/auth0/callback' => 'auth0#callback'
+  get '/auth/failure' => "auth0#failure"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'pages#home'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
