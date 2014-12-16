@@ -13,6 +13,13 @@ gem 'jbuilder', '~> 1.2'
 gem 'omniauth', '~> 1.2'
 gem 'omniauth-auth0', '~> 1.1'
 
+gem 'httparty'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
 group :doc do
   gem 'sdoc', require: false
 end
