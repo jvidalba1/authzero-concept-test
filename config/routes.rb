@@ -1,4 +1,6 @@
 AuthzeroConceptTest::Application.routes.draw do
+  get "auth0/callback"
+  get "auth0/failure"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
