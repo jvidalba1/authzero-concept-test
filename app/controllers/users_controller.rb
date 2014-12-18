@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
 
   # respond_to :json
-  layout 'lumen'
 
   def show
     # respond_with User.find(params[:id])
