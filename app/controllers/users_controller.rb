@@ -12,21 +12,19 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    raise "O"
-  end
+    if @user.save
+      # here is where I have to make the request
+      redirect_to root_path
 
-  def update
-    user = current_user
-    if user.update_attributes(user_params)
-      render json: user, status: 200, location: [:api, user]
     else
-      render json: { errors: user.errors }, status: 422
+      render 'new'
     end
   end
 
+  def update
+  end
+
   def destroy
-    current_user.destroy
-    head 204
   end
 
   private

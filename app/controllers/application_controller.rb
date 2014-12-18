@@ -27,7 +27,7 @@ class ApplicationController < ActionController::Base
   end
 
   def user_parsed(response)
-    @current_user = response.parsed_response
+    @current_user = 
   end
 
 end
