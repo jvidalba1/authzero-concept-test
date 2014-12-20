@@ -14,6 +14,7 @@ gem 'omniauth', '~> 1.2'
 gem 'omniauth-auth0', '~> 1.1'
 
 gem 'httparty'
+gem 'figaro'
 
 # twitter bootstrap css & javascript toolkit
 gem 'twitter-bootswatch-rails', '~> 3.2.0'
