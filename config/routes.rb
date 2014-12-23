@@ -3,6 +3,7 @@ AuthzeroConceptTest::Application.routes.draw do
   get '/auth/failure' => "auth0#failure"
 
   resources :users
+  resources :holdings
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
